@@ -1,5 +1,17 @@
 # clojuredocs.el
 
+## Screenshot
+
+On calling `M-x clojuredocs-display-documentation`
+
+![image](https://github.com/user-attachments/assets/ce60a0cb-9cb3-4786-9ada-c65ea6a0a9e6)
+
+On selecting an entry from the above minibuffer completion:
+
+![image](https://github.com/user-attachments/assets/fc2f92b7-1274-4f6b-aaf3-50d4e1c8ddd5)
+
+## Installation
+
 Make sure you have `request` library installed.
 
 This is what I have in my init.el
