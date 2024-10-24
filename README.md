@@ -10,6 +10,8 @@ On selecting an entry from the above minibuffer completion:
 
 ![image](https://github.com/user-attachments/assets/fc2f92b7-1274-4f6b-aaf3-50d4e1c8ddd5)
 
+BONUS: evaluate the example from this buffer if you are connected to a clojure repl!
+
 ## Installation
 
 Make sure you have `request` library installed.
