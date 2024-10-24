@@ -1,5 +1,9 @@
 # clojuredocs.el
 
+- Search for all functions available on clojuredocs from within emacs
+- Open the documentation + examples of a function inside emacs buffer
+- Modify and evaluate examples from within the buffer (if clojure repl is available)
+
 ## Screenshot
 
 On calling `M-x clojuredocs-display-documentation`
