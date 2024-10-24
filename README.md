@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-On calling `M-x clojuredocs-display-documentation`
+On calling `M-x clojuredocs-lookup`
 
 ![image](https://github.com/user-attachments/assets/ce60a0cb-9cb3-4786-9ada-c65ea6a0a9e6)
 
@@ -45,4 +45,18 @@ For `straight.el` use
               :repo "oxalorg/clojuredocs.el"))
 ```
 
-For first time setup run `clojuredocs-download`, then use `clojuredocs-display-documentation`
+For first time setup run 
+
+```emacs
+M-x clojuredocs-download
+```
+
+or add this to your config
+
+```elisp
+(unless (file-exists-p clojuredocs-cache-file)
+  (message "ClojureDocs cache file not found, downloading...")
+  (clojuredocs-download))
+```
+
+then use `M-x clojuredocs-lookup` or bind it a hotkey.
