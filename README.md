@@ -10,7 +10,7 @@ This is what I have in my init.el
 
 For `elpaca` use:
 
-```
+```elisp
 (use-package clojuredocs
   :ensure (clojuredocs
 		    :host github
@@ -19,7 +19,7 @@ For `elpaca` use:
 
 For `straight.el` use
 
-```
+```elisp
 (use-package clojuredocs
   :straight (clojuredocs
               :type git
