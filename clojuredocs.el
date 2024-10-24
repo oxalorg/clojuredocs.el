@@ -16,7 +16,7 @@
     :success (cl-function
               (lambda (&key data &allow-other-keys)
 		(with-temp-file clojuredocs-cache-file
-                  (insert (json-encode data)))
+		  (prin1 data (current-buffer)))
 		(message "ClojureDocs JSON downloaded and saved!")))
     :error (cl-function
             (lambda (&key error-thrown &allow-other-keys)
@@ -26,7 +26,7 @@
   "Read the cached ClojureDocs JSON."
   (with-temp-buffer
     (insert-file-contents clojuredocs-cache-file)
-    (json-parse-buffer :object-type 'alist :array-type 'list)))
+    (read (current-buffer))))
 
 (defun clojuredocs-lookup ()
   "Lookup a Clojure function and open its documentation in a new buffer."
