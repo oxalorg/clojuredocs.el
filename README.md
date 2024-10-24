@@ -4,6 +4,8 @@
 - Open the documentation + examples of a function inside emacs buffer
 - Modify and evaluate examples from within the buffer (if clojure repl is available)
 
+Read blog post here: https://oxal.org/blog/clojuredocs-emacs-intgeration-browser-elisp/ 
+
 ## Screenshot
 
 On calling `M-x clojuredocs-lookup`
