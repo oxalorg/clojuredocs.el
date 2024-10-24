@@ -27,4 +27,4 @@ For `straight.el` use
 			  :repo "oxalorg/clojuredocs.el"))
 ```
 
-For first time setup run `clojuredocs-download`, then use `clojuredocs-display-doc`
+For first time setup run `clojuredocs-download`, then use `clojuredocs-display-documentation`

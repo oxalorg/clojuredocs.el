@@ -35,9 +35,9 @@
          (vars (alist-get 'vars clojuredocs-data))
          (href-list (mapcar (lambda (fn-doc) (alist-get 'href fn-doc)) vars))
          (selected-href (completing-read "Select function: " href-list)))
-    (clojuredocs-display-doc selected-href vars)))
+    (clojuredocs-display-documentation selected-href vars)))
 
-(defun clojuredocs-display-doc (href fn-docs)
+(defun clojuredocs-display-documentation (href fn-docs)
   "Display the documentation and examples for the function identified by HREF."
   (let* ((fn-doc (seq-find (lambda (doc) (string= (alist-get 'href doc) href)) fn-docs))
          (doc (alist-get 'doc fn-doc))
